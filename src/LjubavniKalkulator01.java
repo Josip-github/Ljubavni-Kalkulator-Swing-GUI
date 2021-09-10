@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.ArrayList;
 
 
@@ -12,7 +11,7 @@ public class LjubavniKalkulator01 {
 
         System.out.println("Prvo ime: " + ime1 + "; drugo ime: " + ime2);
 
-        lista = pretvoriImeUNizBrojeva(ime1.toLowerCase(), ime2.toLowerCase());
+        lista = pretvoriImeUListuBrojeva(ime1.toLowerCase(), ime2.toLowerCase());
         System.out.println(lista);
 
         if (ime1.length() == ime2.length() || ime1.length() < ime2.length()) {
@@ -45,7 +44,7 @@ public class LjubavniKalkulator01 {
     }
 
     public static ArrayList<Integer> ispisiPrvuPravilnuListu2(String ime1, String ime2, ArrayList<Integer> lista) {
-        // Ako je ime1 ve�e od ime2, tj du�e
+        // Ako je ime1 vece od ime2, tj duze
         ArrayList<Integer> lista2 = new ArrayList<>();
         char[] niz1 = ime1.toCharArray();
         char[] niz2 = ime2.toCharArray();
@@ -63,7 +62,7 @@ public class LjubavniKalkulator01 {
 
     String spojImena;
 
-    private ArrayList<Integer> pretvoriImeUNizBrojeva(String ime1, String ime2) {
+    private ArrayList<Integer> pretvoriImeUListuBrojeva(String ime1, String ime2) {
         ArrayList<Integer> lista = new ArrayList<>();
         spojImena = ime1 + ime2;
 

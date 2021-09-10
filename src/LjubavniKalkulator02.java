@@ -12,6 +12,8 @@ public class LjubavniKalkulator02 {
     }
 
     public static ArrayList<Integer> dvoznamenkastiProblem(int a) {
+        // ako zbroj dviju znamenki daje dvoznamenkasti ishod(=>10), onda treba odvojiti te dvije znamenke
+        // kako bi svaka zasebno usla u novu listu.
         ArrayList<Integer> lista = new ArrayList<Integer>();
 
         lista.add(a / 10);
